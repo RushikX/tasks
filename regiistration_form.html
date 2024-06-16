@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px 16px;
+      border: 1px solid #ddd;
+    }
+    th {
+      text-align: left;
+    }
+    .button-container {
+      text-align: right;
+    }
+    
+  
+    .checkbox-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; /* Allow checkboxes to wrap on smaller screens */
+    }
+  </style>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form>
+    <table>
+      <tr>
+        <th>Full Name:</th>
+        <td><input type="text" id="fullname" name="fullname" placeholder="Enter your full name"></td>
+      </tr>
+      <tr>
+        <th>Username:</th>
+        <td><input type="text" id="username" name="username" placeholder="Enter your username"></td>
+      </tr>
+      <tr>
+        <th>Password:</th>
+        <td><input type="password" id="password" name="password" placeholder="Enter your password"></td>
+      </tr>
+      <tr>
+        <th>Re-Enter Password:</th>
+        <td><input type="password" id="repassword" name="repassword" placeholder="Re-enter your password"></td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+      </tr>
+      <tr >
+        <td rowspan="2" style="font-weight:bold;">Gender:</td>
+        <td >
+          <div class="radio-container">
+            <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+          </div> 
+        </td>
+      </tr>
+     
+        <td>
+          <div class="radio-container">
+          <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+        </div>
+        </td>
+      
+      <tr>
+        <th>Phone Number:</th>
+        <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number"></td>
+      </tr>
+      <tr>
+        <th>Age:</th>
+        <td><input type="number" id="age" name="age" placeholder="Enter your age"></td>
+      </tr>
+      <tr>
+        <th>Address:</th>
+        <td><textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea></td>
+      </tr>
+      <tr>
+        <th>Languages Known:</th>
+        <td>
+          <div class="checkbox-container">
+            <label for="kannada"><input type="checkbox" id="kannada" name="language" value="kannada"> Kannada</label>
+            <label for="hindi"><input type="checkbox" id="hindi" name="language" value="hindi"> Hindi</label>
+            <label for="telugu"><input type="checkbox" id="telugu" name="language" value="telugu"> Telugu</label>
+            <label for="english"><input type="checkbox" id="english" name="language" value="english" checked> English</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>Country:</th>
+        <td>
+          <select id="country" name="country">
+            <option value="india">India</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>State:</th>
+        <td>
+          <input type="text" id="state" name="state">
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <label><input type="checkbox" id="terms" name="terms"> I declare all the given details are true</label>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="2" >
+          <input type="submit" value="Register">
+          <div class="button-container">
+            <p>Log in to <a href="">Ethnus</a> website</p>
+
+          </div>
+        </th>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

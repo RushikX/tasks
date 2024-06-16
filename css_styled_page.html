@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first styled page</title>
+    <style>
+      body {
+        background-color: #d4d35e; /* A similar yellow-green background color */
+        font-family: sans-serif;
+        color: #693669; /* Purple text color */
+        margin: 0;
+        padding: 0;
+      }
+      .sidebar {
+        background-color: #d4d35e;
+        padding: 10px;
+        width: 150px;
+        height: 100%;
+        position: fixed;
+      }
+      .sidebar a {
+        display: block;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        color: #693669; /* Purple text color */
+        text-decoration: none;
+        border-right: 10px solid black;
+      }
+      .sidebar a:hover {
+        background-color: #e0e0e0;
+      }
+      .content {
+        margin-left: 170px; /* Enough space to the right of the sidebar */
+        padding: 20px;
+      }
+      .content h1 {
+        color: #693669; /* Purple header color */
+      }
+      .footer {
+        font-style: italic;
+        margin-top: 20px;
+      }
+      .footer hr {
+        border: 0;
+        border-top: 1px dotted #000;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="#">Home page</a>
+      <a href="#">Musings</a>
+      <a href="#">My town</a>
+      <a href="#">Links</a>
+    </div>
+
+    <div class="content">
+      <h1>My first styled page</h1>
+      <p>Welcome to my styled page!</p>
+      <p>
+        It lacks images, but at least it has style. And it has links, even if
+        they don't go anywhere...
+      </p>
+      <p>There should be more here, but I don't know what yet.</p>
+
+      <div class="footer">
+        <hr />
+        <p>Made 12 June 2024<br />by Rushik Kumar.</p>
+      </div>
+    </div>
+  </body>
+</html>
